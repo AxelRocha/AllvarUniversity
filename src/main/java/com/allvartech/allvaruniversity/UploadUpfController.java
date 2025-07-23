@@ -1,6 +1,5 @@
 package com.allvartech.allvaruniversity;
 
-import com.pdftron.pdf.DataExtractionModule;
 import com.pdftron.pdf.PDFNet;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -23,9 +22,7 @@ public class UploadUpfController {
     public String handleFileUpload(@RequestParam("files") MultipartFile[] files, Model model) throws Exception {
         initializePdfLib();
         Path filePath = uploadedFilePath(files);
-        String json = DataExtractionModule.extractData(filePath.toAbsolutePath().toString(), DataExtractionModule.DataExtractionEngine.e_tabular);
         /*===========================================================================================================*/
-
 
 
         /*===========================================================================================================*/
@@ -34,7 +31,6 @@ public class UploadUpfController {
 
     private void initializePdfLib() {
         PDFNet.initialize(PDF_NET_LICENSE);
-        PDFNet.addResourceSearchPath(RESOURCE_PATH);
     }
 
     @GetMapping("/uploadPage")
@@ -68,6 +64,4 @@ public class UploadUpfController {
     }
 
     private static final String PDF_NET_LICENSE = "demo:1701685057855:7ca2fcfc0300000000c347b341f64c669d37337c3a382f654457d93f43";
-    private static final String RESOURCE_PATH = System.getProperty("user.dir")
-            + File.separator + "DataExtraction" + File.separator + "lib" + File.separator;
 }
