@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+DataExtraction/*
+uploaded_files/*
