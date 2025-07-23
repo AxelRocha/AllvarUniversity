@@ -15,5 +15,8 @@ public class Main {
             Chamar as classes e atritubos na MAIN
             Commitar as tarefas
          */
+
+        Onibus onibus = new Onibus();
+        onibus.ligarMotor();
     }
 }
