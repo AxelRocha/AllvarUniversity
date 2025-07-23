@@ -16,7 +16,9 @@ public class Main {
             Commitar as tarefas
          */
 
-        Onibus onibus = new Onibus();
+        Onibus onibus = new Onibus(475.15, 42,true , "Ouro e Prata", 1551321981651981951L);
         onibus.ligarMotor();
+        double potencia = onibus.getPotencia();
+        System.out.println("Potência: "+potencia+" cv");
     }
 }

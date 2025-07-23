@@ -6,9 +6,19 @@ public class Onibus {
 
     private int assentos;
     private double potencia;
-    private char tipo;
+    private boolean disponivel;
     private String companhia;
     private long numeroDeSerie;
+
+    // constructor
+
+    public Onibus(double potencia, int assentos, boolean disponivel, String companhia, long numeroDeSerie) {
+        this.potencia = potencia;
+        this.assentos = assentos;
+        this.disponivel = disponivel;
+        this.companhia = companhia;
+        this.numeroDeSerie = numeroDeSerie;
+    }
 
     // getters e setters
 
@@ -28,12 +38,12 @@ public class Onibus {
         this.potencia = potencia;
     }
 
-    public char getTipo() {
-        return tipo;
+    public boolean getDisponivel() {
+        return disponivel;
     }
 
-    public void setTipo(char tipo) {
-        this.tipo = tipo;
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
     }
 
     public String getCompanhia() {
