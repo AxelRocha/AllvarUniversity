@@ -15,5 +15,8 @@ public class Main {
             Chamar as classes e atritubos na MAIN
             Commitar as tarefas
          */
+
+        Marcas marcas = new Marcas("Nike", "USA");
+        marcas.exibirinfo();
     }
 }
