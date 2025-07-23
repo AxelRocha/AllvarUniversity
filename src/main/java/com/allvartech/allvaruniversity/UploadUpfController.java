@@ -22,6 +22,7 @@ public class UploadUpfController {
     public String handleFileUpload(@RequestParam("files") MultipartFile[] files, Model model) throws Exception {
         initializePdfLib();
         Path filePath = uploadedFilePath(files);
+        System.out.println("rafaeel");
         /*===========================================================================================================*/
 
 
