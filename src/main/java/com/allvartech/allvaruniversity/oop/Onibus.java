@@ -1,5 +1,7 @@
 package com.allvartech.allvaruniversity.oop;
 
+import java.util.Scanner;
+
 public class Onibus {
 
     // atributos
@@ -9,6 +11,8 @@ public class Onibus {
     private boolean disponivel;
     private String companhia;
     private long numeroDeSerie;
+
+    private final Scanner sc = new Scanner(System.in)
 
     // constructor
 
@@ -22,28 +26,12 @@ public class Onibus {
 
     // getters e setters
 
-    public int getAssentos() {
-        return assentos;
+    public long getNumeroDeSerie() {
+        return numeroDeSerie;
     }
 
-    public void setAssentos(int assentos) {
-        this.assentos = assentos;
-    }
-
-    public double getPotencia() {
-        return potencia;
-    }
-
-    public void setPotencia(double potencia) {
-        this.potencia = potencia;
-    }
-
-    public boolean getDisponivel() {
-        return disponivel;
-    }
-
-    public void setDisponivel(boolean disponivel) {
-        this.disponivel = disponivel;
+    public void setNumeroDeSerie(long numeroDeSerie) {
+        this.numeroDeSerie = numeroDeSerie;
     }
 
     public String getCompanhia() {
@@ -54,12 +42,28 @@ public class Onibus {
         this.companhia = companhia;
     }
 
-    public long getNumeroDeSerie() {
-        return numeroDeSerie;
+    public boolean isDisponivel() {
+        return disponivel;
     }
 
-    public void setNumeroDeSerie(long numeroDeSerie) {
-        this.numeroDeSerie = numeroDeSerie;
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
+    }
+
+    public double getPotencia() {
+        return potencia;
+    }
+
+    public void setPotencia(double potencia) {
+        this.potencia = potencia;
+    }
+
+    public int getAssentos() {
+        return assentos;
+    }
+
+    public void setAssentos(int assentos) {
+        this.assentos = assentos;
     }
 
     // metodos
@@ -68,5 +72,20 @@ public class Onibus {
         System.out.println("Ligando motor...");
         System.out.println("Motor ligado.");
         System.out.println("Motorista disse: \"Todos a bordo!\".");
+    }
+
+    public void embarquePassageiros() {
+        System.out.println("Digite quantos passageiros irão embarcar:");
+        int quant = sc.nextInt();
+        if (assentos < quant)
+            System.out.println("Não há assentos disponíveis para essa quantidade de passageiros.");
+        else {
+            System.out.println(quant + " passageiros embarcando.");
+            assentos = assentos - quant;
+        }
+    }
+
+    public void closeScanner() {
+        sc.close();
     }
 }
