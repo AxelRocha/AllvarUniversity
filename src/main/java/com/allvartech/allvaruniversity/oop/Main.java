@@ -20,3 +20,9 @@ public class Main {
         marcas.exibirinfo();
     }
 }
+
+        Pessoa p = new Pessoa();
+        p.geralValoresAleatorios();
+        System.out.println("Pessoa: idade=" + p.getIdade() + ", altura=" + p.getAltura() + ", sexo=" + p.getSexo() + ", cpf=" + p.getCpf() + ", ativo=" + p.isAtivo());
+    }
+}
