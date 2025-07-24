@@ -19,8 +19,23 @@ public class Main {
         // Tarefa do João
 
         Onibus onibus = new Onibus(475.15, 42,true, "Ouro e Prata", 1551321981651981951L);
+
         onibus.ligarMotor();
+
         double potencia = onibus.getPotencia();
         System.out.println("Potência: "+potencia+" cv");
+
+        int assentos = onibus.getAssentos();
+        System.out.println("Assentos disponíveis: " + assentos);
+        onibus.embarquePassageiros();
+        assentos = onibus.getAssentos();
+        System.out.println("Assentos disponíveis: " + assentos);
+
+        // Teste calculadora
+
+        /*
+        Calculadora calculadora = new Calculadora();
+        calculadora.executar();
+        */
     }
 }
