@@ -18,11 +18,13 @@ public class Main {
 
         Marcas marcas = new Marcas("Nike", "USA");
         marcas.exibirinfo();
-    }
-}
 
         Pessoa p = new Pessoa();
-        p.geralValoresAleatorios();
+        p.gerarValoresAleatorios();
         System.out.println("Pessoa: idade=" + p.getIdade() + ", altura=" + p.getAltura() + ", sexo=" + p.getSexo() + ", cpf=" + p.getCpf() + ", ativo=" + p.isAtivo());
+
+
+
+
     }
 }
