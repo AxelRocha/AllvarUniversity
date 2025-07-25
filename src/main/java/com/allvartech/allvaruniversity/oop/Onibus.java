@@ -29,39 +29,30 @@ public class Onibus {
     public long getNumeroDeSerie() {
         return numeroDeSerie;
     }
-
     public void setNumeroDeSerie(long numeroDeSerie) {
         this.numeroDeSerie = numeroDeSerie;
     }
-
     public String getCompanhia() {
         return companhia;
     }
-
     public void setCompanhia(String companhia) {
         this.companhia = companhia;
     }
-
     public boolean isTrucado() {
         return trucado;
     }
-
-    public void isTrucado(boolean trucado) {
+    public void setTrucado(boolean trucado) {
         this.trucado = trucado;
     }
-
     public double getPotencia() {
         return potencia;
     }
-
     public void setPotencia(double potencia) {
         this.potencia = potencia;
     }
-
     public int getAssentos() {
         return assentos;
     }
-
     public void setAssentos(int assentos) {
         this.assentos = assentos;
     }
