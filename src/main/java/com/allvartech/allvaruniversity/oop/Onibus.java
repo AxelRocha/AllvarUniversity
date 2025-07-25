@@ -12,7 +12,7 @@ public class Onibus {
     private String companhia;
     private long numeroDeSerie;
 
-    private final Scanner sc = new Scanner(System.in)
+    private final Scanner sc = new Scanner(System.in);
 
     // constructor
 
