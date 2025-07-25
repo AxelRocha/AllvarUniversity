@@ -8,7 +8,7 @@ public class Onibus {
 
     private int assentos;
     private double potencia;
-    private boolean disponivel;
+    private boolean trucado;
     private String companhia;
     private long numeroDeSerie;
 
@@ -16,10 +16,10 @@ public class Onibus {
 
     // constructor
 
-    public Onibus(double potencia, int assentos, boolean disponivel, String companhia, long numeroDeSerie) {
+    public Onibus(double potencia, int assentos, boolean trucado, String companhia, long numeroDeSerie) {
         this.potencia = potencia;
         this.assentos = assentos;
-        this.disponivel = disponivel;
+        this.trucado = trucado;
         this.companhia = companhia;
         this.numeroDeSerie = numeroDeSerie;
     }
@@ -42,12 +42,12 @@ public class Onibus {
         this.companhia = companhia;
     }
 
-    public boolean isDisponivel() {
-        return disponivel;
+    public boolean isTrucado() {
+        return trucado;
     }
 
-    public void setDisponivel(boolean disponivel) {
-        this.disponivel = disponivel;
+    public void isTrucado(boolean trucado) {
+        this.trucado = trucado;
     }
 
     public double getPotencia() {

@@ -16,8 +16,6 @@ public class Main {
             Commitar as tarefas
          */
 
-        // Tarefa do João
-
         Onibus onibus = new Onibus(475.15, 42,true, "Ouro e Prata", 1551321981651981951L);
 
         onibus.ligarMotor();
@@ -30,12 +28,5 @@ public class Main {
         onibus.embarquePassageiros();
         assentos = onibus.getAssentos();
         System.out.println("Assentos disponíveis: " + assentos);
-
-        // Teste calculadora
-
-        /*
-        Calculadora calculadora = new Calculadora();
-        calculadora.executar();
-        */
     }
 }
