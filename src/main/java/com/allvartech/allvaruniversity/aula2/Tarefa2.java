@@ -18,8 +18,10 @@ public class Tarefa2 {
         System.out.println("listStringAleatorio: " + listStringAleatorio);
         System.out.println();
 
+        int i;
+
         int menorVetorIntAleatorio = vetorIntAleatorio[0];
-        int i = 1;
+        i = 1;
         while (i < vetorIntAleatorio.length) {
             if (menorVetorIntAleatorio > vetorIntAleatorio[i])
                 menorVetorIntAleatorio = vetorIntAleatorio[i];
@@ -47,5 +49,52 @@ public class Tarefa2 {
             i++;
         }
         System.out.println("menorListStringAleatorio: " + menorListStringAleatorio);
+
+        System.out.println();
+        System.out.println("Usando If-Else:");
+        for (DiaDaSemana diaDaSemana : DiaDaSemana.values()) {
+            if (diaDaSemana == DiaDaSemana.DOM)
+                System.out.println("Domingo.");
+            else if (diaDaSemana == DiaDaSemana.SEG)
+                System.out.println("Segunda-feira.");
+            else if (diaDaSemana == DiaDaSemana.TER)
+                System.out.println("Terça-feira.");
+            else if (diaDaSemana == DiaDaSemana.QUA)
+                System.out.println("Quarta-feira.");
+            else if (diaDaSemana == DiaDaSemana.QUI)
+                System.out.println("Quinta-feira.");
+            else if (diaDaSemana == DiaDaSemana.SEX)
+                System.out.println("Sexta-feira.");
+            else if (diaDaSemana == DiaDaSemana.SAB)
+                System.out.println("Sábado.");
+        }
+
+        System.out.println();
+        System.out.println("Usando Switch-Case:");
+        for (DiaDaSemana diaDaSemana : DiaDaSemana.values()) {
+            switch (diaDaSemana) {
+                case DOM:
+                    System.out.println("Domingo.");
+                    break;
+                case SEG:
+                    System.out.println("Segunda-feira.");
+                    break;
+                case TER:
+                    System.out.println("Terça-feira.");
+                    break;
+                case QUA:
+                    System.out.println("Quarta-feira.");
+                    break;
+                case QUI:
+                    System.out.println("Quinta-feira.");
+                    break;
+                case SEX:
+                    System.out.println("Sexta-feira.");
+                    break;
+                case SAB:
+                    System.out.println("Sábado.");
+                    break;
+            }
+        }
     }
 }
