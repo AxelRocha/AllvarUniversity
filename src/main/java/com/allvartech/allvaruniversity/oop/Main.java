@@ -30,11 +30,8 @@ public class Main {
         System.out.println("Ônibus trucado: " + (trucado ? "sim" : "não"));
         System.out.println("Companhia: " + companhia);
         System.out.println("Número de série: " + numeroDeSerie);
+        System.out.println();
 
         onibus.ligarMotor();
-
-        onibus.embarquePassageiros();
-        assentos = onibus.getAssentos();
-        System.out.println("Assentos disponíveis: " + assentos);
     }
 }
