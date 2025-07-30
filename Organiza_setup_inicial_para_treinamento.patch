@@ -1,0 +1,46 @@
+Subject: [PATCH] Organiza setup inicial para treinamento
+---
+Index: src/main/java/com/allvartech/allvaruniversity/UploadUpfController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/allvartech/allvaruniversity/UploadUpfController.java b/src/main/java/com/allvartech/allvaruniversity/UploadUpfController.java
+--- a/src/main/java/com/allvartech/allvaruniversity/UploadUpfController.java	(revision 667c4adfdfe0e0bda454ce04c6e39563eb647cf9)
++++ b/src/main/java/com/allvartech/allvaruniversity/UploadUpfController.java	(revision 585b7d0dab7c464951b4804d5f51d3ec840b864a)
+@@ -1,6 +1,5 @@
+ package com.allvartech.allvaruniversity;
+ 
+-import com.pdftron.pdf.DataExtractionModule;
+ import com.pdftron.pdf.PDFNet;
+ import lombok.RequiredArgsConstructor;
+ import org.springframework.stereotype.Controller;
+@@ -23,18 +22,15 @@
+     public String handleFileUpload(@RequestParam("files") MultipartFile[] files, Model model) throws Exception {
+         initializePdfLib();
+         Path filePath = uploadedFilePath(files);
+-        String json = DataExtractionModule.extractData(filePath.toAbsolutePath().toString(), DataExtractionModule.DataExtractionEngine.e_tabular);
+         /*===========================================================================================================*/
+ 
+ 
+-
+         /*===========================================================================================================*/
+         return endFileUpload(model);
+     }
+ 
+     private void initializePdfLib() {
+         PDFNet.initialize(PDF_NET_LICENSE);
+-        PDFNet.addResourceSearchPath(RESOURCE_PATH);
+     }
+ 
+     @GetMapping("/uploadPage")
+@@ -68,6 +64,4 @@
+     }
+ 
+     private static final String PDF_NET_LICENSE = "demo:1701685057855:7ca2fcfc0300000000c347b341f64c669d37337c3a382f654457d93f43";
+-    private static final String RESOURCE_PATH = System.getProperty("user.dir")
+-            + File.separator + "DataExtraction" + File.separator + "lib" + File.separator;
+ }
+\ No newline at end of file
+diff --git a/DataExtraction/Lib/dummy b/DataExtraction/Lib/dummy
+new file mode 100644
