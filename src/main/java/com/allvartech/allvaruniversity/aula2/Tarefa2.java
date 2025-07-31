@@ -7,16 +7,22 @@ public class Tarefa2 {
 
     public static void main(String[] args) {
 
+        // declarando os vetores e listas e chamando os métodos que geram elas
+
         int[] vetorIntAleatorio = Aula2.arrayAleatorioInt();
         String[] vetorStringAleatorio = Aula2.arrayAleatorioStrings();
         List<Integer> listIntAleatorio = Aula2.listAleatorioInt();
         List<String> listStringAleatorio = Aula2.listAleatorioStrings();
+
+        // printando os vetores e listas geradas
 
         System.out.println("vetorIntAleatorio: " + Arrays.toString(vetorIntAleatorio));
         System.out.println("vetorStringAleatorio: " + Arrays.toString(vetorStringAleatorio));
         System.out.println("listIntAleatorio: " + listIntAleatorio);
         System.out.println("listStringAleatorio: " + listStringAleatorio);
         System.out.println();
+
+        // resolução da tarefa
 
         int i;
 
@@ -49,6 +55,8 @@ public class Tarefa2 {
             i++;
         }
         System.out.println("menorListStringAleatorio: " + menorListStringAleatorio);
+
+        // resolução do desafio com classe Enum
 
         System.out.println();
         System.out.println("Usando If-Else:");

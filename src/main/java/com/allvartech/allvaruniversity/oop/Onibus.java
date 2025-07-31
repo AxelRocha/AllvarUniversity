@@ -53,7 +53,7 @@ public class Onibus {
         this.assentos = assentos;
     }
 
-    // metodos
+    // métodos
 
     public void ligarMotor() {
         System.out.println("Ligando motor...");
