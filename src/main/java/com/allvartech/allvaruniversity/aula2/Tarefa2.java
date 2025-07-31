@@ -14,7 +14,7 @@ public class Tarefa2 {
         List<Integer> listIntAleatorio = Aula2.listAleatorioInt();
         List<String> listStringAleatorio = Aula2.listAleatorioStrings();
 
-        // printa os vetores e listas geradas
+        // imprime os vetores e listas geradas
 
         System.out.println();
         System.out.println("vetorIntAleatorio: " + Arrays.toString(vetorIntAleatorio));

@@ -56,12 +56,11 @@ public class Tarefa2Reborn {
 
         // método que ordena a lista em ordem decrescente
 
-        Collections.sort(listIntAleatorio, Collections.reverseOrder());
+        listIntAleatorio.sort(Collections.reverseOrder());
 
         System.out.println("listIntAleatorio: " + listIntAleatorio);
 
         // 3
-
 
 
         // 4
@@ -71,13 +70,46 @@ public class Tarefa2Reborn {
 
         // método que ordena a lista em ordem alfabética, sem diferenciar letras maiúsculas e minúsculas
 
-        Collections.sort(listStringAleatorio, String.CASE_INSENSITIVE_ORDER);
+        listStringAleatorio.sort(String.CASE_INSENSITIVE_ORDER);
 
         System.out.println("listStringAleatorio: " + listStringAleatorio);
 
         // 5
 
+        // declara a lista de objetos da classe Cadastro
 
+        List<Cadastro> cadastro = new ArrayList<>();
+
+        // adiciona 10 objetos à lista
+
+        cadastro.add(new Cadastro("João", 25));
+        cadastro.add(new Cadastro("Ana", 30));
+        cadastro.add(new Cadastro("João", 20));
+        cadastro.add(new Cadastro("Carlos", 22));
+        cadastro.add(new Cadastro("Beatriz", 27));
+        cadastro.add(new Cadastro("Ana", 22));
+        cadastro.add(new Cadastro("Daniel", 35));
+        cadastro.add(new Cadastro("Carlos", 18));
+        cadastro.add(new Cadastro("Fernanda", 28));
+        cadastro.add(new Cadastro("Beatriz", 24));
+
+        // imprime a lista antes de ordenar
+
+        System.out.println();
+        for (Cadastro c : cadastro) {
+            System.out.println(c.getNome() + " - " + c.getIdade());
+        }
+
+        // método que ordena a lista primeiro por nome, sem diferenciar maiúsculas e minúsculas, e depois por idade
+
+        cadastro.sort(Comparator.comparing(Cadastro::getNome, String.CASE_INSENSITIVE_ORDER).thenComparing(Cadastro::getIdade));
+
+        // imprime a lista após ordenar
+
+        System.out.println();
+        for (Cadastro c : cadastro) {
+            System.out.println(c.getNome() + " - " + c.getIdade());
+        }
 
         // 6
 
