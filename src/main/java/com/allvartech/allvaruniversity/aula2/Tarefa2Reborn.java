@@ -36,19 +36,21 @@ public class Tarefa2Reborn {
 
         // bubble sort decrescente
 
-        for (int i = 0; i < vetorIntAleatorio.length - 1; i++)
-            for (int j = 0; j < vetorIntAleatorio.length - 1 - i; j++)
+        for (int i = 0; i < vetorIntAleatorio.length - 1; i++) {
+            for (int j = 0; j < vetorIntAleatorio.length - 1 - i; j++) {
                 if (vetorIntAleatorio[j] < vetorIntAleatorio[j + 1]) {
                     int aux = vetorIntAleatorio[j];
                     vetorIntAleatorio[j] = vetorIntAleatorio[j + 1];
                     vetorIntAleatorio[j + 1] = aux;
                 }
+            }
+        }
 
         System.out.println("vetorIntAleatorio: " + Arrays.toString(vetorIntAleatorio));
-        System.out.println();
 
         // 2
 
+        System.out.println();
         System.out.println("listIntAleatorio: " + listIntAleatorio);
 
         // método que ordena a lista em ordem decrescente
@@ -56,14 +58,13 @@ public class Tarefa2Reborn {
         Collections.sort(listIntAleatorio, Collections.reverseOrder());
 
         System.out.println("listIntAleatorio: " + listIntAleatorio);
-        System.out.println();
 
         // 3
 
 
-
         // 4
 
+        System.out.println();
         System.out.println("listStringAleatorio: " + listStringAleatorio);
 
         // método que ordena a lista em ordem alfabética, sem diferenciar letras maiúsculas e minúsculas
@@ -71,16 +72,15 @@ public class Tarefa2Reborn {
         Collections.sort(listStringAleatorio, String.CASE_INSENSITIVE_ORDER);
 
         System.out.println("listStringAleatorio: " + listStringAleatorio);
-        System.out.println();
 
         // 5
-
 
 
         // 6
 
         // gera a lista novamente, pois ela foi ordenada previamente
 
+        System.out.println();
         listIntAleatorio = Aula2.listAleatorioInt();
         System.out.println("listIntAleatorio: " + listIntAleatorio);
 

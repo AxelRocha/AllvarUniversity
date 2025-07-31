@@ -17,7 +17,7 @@ public class Main {
 
 //======================================================================================================================
 
-        Onibus onibus = new Onibus(475.15, 42,true, "Ouro e Prata", 1551321981651981951L);
+        Onibus onibus = new Onibus(475.15, 42, true, "Ouro e Prata", 1551321981651981951L);
 
         double potencia = onibus.getPotencia();
         int assentos = onibus.getAssentos();
@@ -25,7 +25,7 @@ public class Main {
         String companhia = onibus.getCompanhia();
         long numeroDeSerie = onibus.getNumeroDeSerie();
 
-        System.out.println("Potência: "+potencia+" cv");
+        System.out.println("Potência: " + potencia + " cv");
         System.out.println("Assentos disponíveis: " + assentos);
         System.out.println("Ônibus trucado: " + (trucado ? "sim" : "não"));
         System.out.println("Companhia: " + companhia);

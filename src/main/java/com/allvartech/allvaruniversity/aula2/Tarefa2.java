@@ -29,29 +29,35 @@ public class Tarefa2 {
         int menorVetorIntAleatorio = vetorIntAleatorio[0];
         i = 1;
         while (i < vetorIntAleatorio.length) {
-            if (menorVetorIntAleatorio > vetorIntAleatorio[i])
+            if (menorVetorIntAleatorio > vetorIntAleatorio[i]) {
                 menorVetorIntAleatorio = vetorIntAleatorio[i];
+            }
             i++;
         }
         System.out.println("menorVetorIntAleatorio: " + menorVetorIntAleatorio);
 
         String menorVetorStringAleatorio = vetorStringAleatorio[0];
-        for (i = 1; i < vetorStringAleatorio.length; i++)
-            if (menorVetorStringAleatorio.length() > vetorStringAleatorio[i].length())
+        for (i = 1; i < vetorStringAleatorio.length; i++) {
+            if (menorVetorStringAleatorio.length() > vetorStringAleatorio[i].length()) {
                 menorVetorStringAleatorio = vetorStringAleatorio[i];
+            }
+        }
         System.out.println("menorVetorStringAleatorio: " + menorVetorStringAleatorio);
 
         int menorListIntAleatorio = listIntAleatorio.get(0);
-        for (i = 1; i < listIntAleatorio.size(); i++)
-            if (menorListIntAleatorio > listIntAleatorio.get(i))
+        for (i = 1; i < listIntAleatorio.size(); i++) {
+            if (menorListIntAleatorio > listIntAleatorio.get(i)) {
                 menorListIntAleatorio = listIntAleatorio.get(i);
+            }
+        }
         System.out.println("menorListIntAleatorio: " + menorListIntAleatorio);
 
         String menorListStringAleatorio = listStringAleatorio.get(0);
         i = 1;
         while (i < listStringAleatorio.size()) {
-            if (menorListStringAleatorio.length() > listStringAleatorio.get(i).length())
+            if (menorListStringAleatorio.length() > listStringAleatorio.get(i).length()) {
                 menorListStringAleatorio = listStringAleatorio.get(i);
+            }
             i++;
         }
         System.out.println("menorListStringAleatorio: " + menorListStringAleatorio);
@@ -61,20 +67,21 @@ public class Tarefa2 {
         System.out.println();
         System.out.println("Usando If-Else:");
         for (DiaSemana diaSemana : DiaSemana.values()) {
-            if (diaSemana == DiaSemana.DOM)
+            if (diaSemana == DiaSemana.DOM) {
                 System.out.println("Domingo.");
-            else if (diaSemana == DiaSemana.SEG)
+            } else if (diaSemana == DiaSemana.SEG) {
                 System.out.println("Segunda-feira.");
-            else if (diaSemana == DiaSemana.TER)
+            } else if (diaSemana == DiaSemana.TER) {
                 System.out.println("Terça-feira.");
-            else if (diaSemana == DiaSemana.QUA)
+            } else if (diaSemana == DiaSemana.QUA) {
                 System.out.println("Quarta-feira.");
-            else if (diaSemana == DiaSemana.QUI)
+            } else if (diaSemana == DiaSemana.QUI) {
                 System.out.println("Quinta-feira.");
-            else if (diaSemana == DiaSemana.SEX)
+            } else if (diaSemana == DiaSemana.SEX) {
                 System.out.println("Sexta-feira.");
-            else if (diaSemana == DiaSemana.SAB)
+            } else if (diaSemana == DiaSemana.SAB) {
                 System.out.println("Sábado.");
+            }
         }
 
         System.out.println();
