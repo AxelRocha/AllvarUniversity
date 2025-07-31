@@ -62,6 +62,29 @@ public class Tarefa2Reborn {
 
         // 3
 
+        // gera a lista novamente, pois ela foi ordenada previamente
+
+        listIntAleatorio = Aula2.listAleatorioInt();
+
+        System.out.println();
+        System.out.println("listIntAleatorio: " + listIntAleatorio);
+
+        List<Integer> numerosPrimos = new ArrayList<>();
+
+        for (int num : listIntAleatorio) {
+            boolean primo = num > 1;
+            for (int j = 2; j < Math.sqrt(num); j++) {
+                if (num % j == 0) {
+                    primo = false;
+                    break;
+                }
+            }
+            if (primo) {
+                numerosPrimos.add(num);
+            }
+        }
+
+        System.out.println("numerosPrimos: " + numerosPrimos);
 
         // 4
 
@@ -93,8 +116,6 @@ public class Tarefa2Reborn {
         cadastro.add(new Cadastro("Fernanda", 28));
         cadastro.add(new Cadastro("Beatriz", 24));
 
-        // imprime a lista antes de ordenar
-
         System.out.println();
         for (Cadastro c : cadastro) {
             System.out.println(c.getNome() + " - " + c.getIdade());
@@ -104,18 +125,12 @@ public class Tarefa2Reborn {
 
         cadastro.sort(Comparator.comparing(Cadastro::getNome, String.CASE_INSENSITIVE_ORDER).thenComparing(Cadastro::getIdade));
 
-        // imprime a lista após ordenar
-
         System.out.println();
         for (Cadastro c : cadastro) {
             System.out.println(c.getNome() + " - " + c.getIdade());
         }
 
         // 6
-
-        // gera a lista novamente, pois ela foi ordenada previamente
-
-        listIntAleatorio = Aula2.listAleatorioInt();
 
         System.out.println();
         System.out.println("listIntAleatorio: " + listIntAleatorio);
