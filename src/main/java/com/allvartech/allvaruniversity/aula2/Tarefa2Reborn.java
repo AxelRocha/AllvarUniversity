@@ -69,11 +69,15 @@ public class Tarefa2Reborn {
         System.out.println();
         System.out.println("listIntAleatorio: " + listIntAleatorio);
 
+        // gera a lista que vai armazenar os números primos
+
         List<Integer> numerosPrimos = new ArrayList<>();
+
+        // verifica se cada número da lista é primo e armazena ele na lista de primos
 
         for (int num : listIntAleatorio) {
             boolean primo = num > 1;
-            for (int j = 2; j < Math.sqrt(num); j++) {
+            for (int j = 2; j <= Math.sqrt(num); j++) {
                 if (num % j == 0) {
                     primo = false;
                     break;
