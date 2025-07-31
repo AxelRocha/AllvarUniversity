@@ -1,6 +1,6 @@
 package com.allvartech.allvaruniversity.oop;
 
-public class Tarefa1 {
+public class Main {
 
     public static void main(String[] args) {
 
@@ -14,6 +14,8 @@ public class Tarefa1 {
             Chamar as classes e atritubos na MAIN
             Commitar as tarefas
          */
+
+//======================================================================================================================
 
         Onibus onibus = new Onibus(475.15, 42,true, "Ouro e Prata", 1551321981651981951L);
 

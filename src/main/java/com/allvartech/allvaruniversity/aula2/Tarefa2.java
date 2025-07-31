@@ -7,14 +7,14 @@ public class Tarefa2 {
 
     public static void main(String[] args) {
 
-        // declarando os vetores e listas e chamando os métodos que geram elas
+        // declara os vetores e listas e chama os métodos que geram elas
 
         int[] vetorIntAleatorio = Aula2.arrayAleatorioInt();
         String[] vetorStringAleatorio = Aula2.arrayAleatorioStrings();
         List<Integer> listIntAleatorio = Aula2.listAleatorioInt();
         List<String> listStringAleatorio = Aula2.listAleatorioStrings();
 
-        // printando os vetores e listas geradas
+        // printa os vetores e listas geradas
 
         System.out.println("vetorIntAleatorio: " + Arrays.toString(vetorIntAleatorio));
         System.out.println("vetorStringAleatorio: " + Arrays.toString(vetorStringAleatorio));
@@ -60,27 +60,27 @@ public class Tarefa2 {
 
         System.out.println();
         System.out.println("Usando If-Else:");
-        for (DiaDaSemana diaDaSemana : DiaDaSemana.values()) {
-            if (diaDaSemana == DiaDaSemana.DOM)
+        for (DiaSemana diaSemana : DiaSemana.values()) {
+            if (diaSemana == DiaSemana.DOM)
                 System.out.println("Domingo.");
-            else if (diaDaSemana == DiaDaSemana.SEG)
+            else if (diaSemana == DiaSemana.SEG)
                 System.out.println("Segunda-feira.");
-            else if (diaDaSemana == DiaDaSemana.TER)
+            else if (diaSemana == DiaSemana.TER)
                 System.out.println("Terça-feira.");
-            else if (diaDaSemana == DiaDaSemana.QUA)
+            else if (diaSemana == DiaSemana.QUA)
                 System.out.println("Quarta-feira.");
-            else if (diaDaSemana == DiaDaSemana.QUI)
+            else if (diaSemana == DiaSemana.QUI)
                 System.out.println("Quinta-feira.");
-            else if (diaDaSemana == DiaDaSemana.SEX)
+            else if (diaSemana == DiaSemana.SEX)
                 System.out.println("Sexta-feira.");
-            else if (diaDaSemana == DiaDaSemana.SAB)
+            else if (diaSemana == DiaSemana.SAB)
                 System.out.println("Sábado.");
         }
 
         System.out.println();
         System.out.println("Usando Switch-Case:");
-        for (DiaDaSemana diaDaSemana : DiaDaSemana.values()) {
-            switch (diaDaSemana) {
+        for (DiaSemana diaSemana : DiaSemana.values()) {
+            switch (diaSemana) {
                 case DOM:
                     System.out.println("Domingo.");
                     break;
