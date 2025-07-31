@@ -15,11 +15,11 @@ public class Tarefa2Reborn {
           4 Dado uma lista de String ordene de forma alfabetica
           5 Crie uma classe com os atributos Nome e Idade; Crie uma Lista de objetos dessa classe e ordene essa lista primeiro
                 por nome e depois por idade
-          6 Dado uma lista de inteiros aleatorios, identifique a maior sequenciaTemp de numero ordenados;
+          6 Dado uma lista de inteiros aleatorios, identifique a maior sequencia de numero ordenados;
                 exemplo 23 5 43 6 8 12 34 12 43 45 3
-                    a maior sequenciaTemp é a 6 8 12 34
+                    a maior sequencia é a 6 8 12 34
                 exemplo 50 45 53 39 44 13 26 34 54 26 69
-                    a maior sequenciaTemp é 13 26 34 54
+                    a maior sequencia é 13 26 34 54
          */
 
 //======================================================================================================================
