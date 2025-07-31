@@ -16,6 +16,7 @@ public class Tarefa2 {
 
         // printa os vetores e listas geradas
 
+        System.out.println();
         System.out.println("vetorIntAleatorio: " + Arrays.toString(vetorIntAleatorio));
         System.out.println("vetorStringAleatorio: " + Arrays.toString(vetorStringAleatorio));
         System.out.println("listIntAleatorio: " + listIntAleatorio);

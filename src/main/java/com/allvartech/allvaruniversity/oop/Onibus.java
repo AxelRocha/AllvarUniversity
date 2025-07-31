@@ -55,7 +55,17 @@ public class Onibus {
 
     // métodos
 
+    public void printarAtributos() {
+        System.out.println();
+        System.out.println("Potência: " + potencia + " cv");
+        System.out.println("Assentos disponíveis: " + assentos);
+        System.out.println("Ônibus trucado: " + (trucado ? "sim" : "não"));
+        System.out.println("Companhia: " + companhia);
+        System.out.println("Número de série: " + numeroDeSerie);
+    }
+
     public void ligarMotor() {
+        System.out.println();
         System.out.println("Ligando motor...");
         System.out.println("Motor ligado.");
         System.out.println("Motorista disse: \"Todos a bordo!\".");

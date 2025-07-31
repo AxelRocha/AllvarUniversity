@@ -17,21 +17,19 @@ public class Main {
 
 //======================================================================================================================
 
-        Onibus onibus = new Onibus(475.15, 42, true, "Ouro e Prata", 1551321981651981951L);
+        // cria um objeto da classe Onibus e passa os parâmetros iniciais
 
-        double potencia = onibus.getPotencia();
-        int assentos = onibus.getAssentos();
-        boolean trucado = onibus.isTrucado();
-        String companhia = onibus.getCompanhia();
-        long numeroDeSerie = onibus.getNumeroDeSerie();
+        Onibus onibus = new Onibus(
+            475.15,
+            42,
+            true,
+            "Ouro e Prata",
+            1551321981651981951L
+        );
 
-        System.out.println("Potência: " + potencia + " cv");
-        System.out.println("Assentos disponíveis: " + assentos);
-        System.out.println("Ônibus trucado: " + (trucado ? "sim" : "não"));
-        System.out.println("Companhia: " + companhia);
-        System.out.println("Número de série: " + numeroDeSerie);
-        System.out.println();
+        // chama os métodos da classe Onibus
 
+        onibus.printarAtributos();
         onibus.ligarMotor();
     }
 }
