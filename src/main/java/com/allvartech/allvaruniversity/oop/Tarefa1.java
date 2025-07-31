@@ -1,9 +1,7 @@
 package com.allvartech.allvaruniversity.oop;
 
-import java.util.ArrayList;
-import java.util.List;
+public class Tarefa1 {
 
-public class Main {
     public static void main(String[] args) {
 
         /*
